@@ -16,4 +16,8 @@ func sumAll(num ...int) int {
 func main() {
 	sum := sumAll(1, 2, 3, 4, 5, 6)
 	fmt.Println(sum)
+
+	values := []int{10, 20, 30}
+
+	fmt.Println(sumAll(values...))
 }
