@@ -33,9 +33,9 @@ func main() {
 
 	fmt.Println(string(body))
 
-	// http.HandleFunc("/ok", okRoute)
+	http.HandleFunc("/ok", okRoute)
 
-	// err := http.ListenAndServe(":8080", nil)
-	// fmt.Println(err)
+	err := http.ListenAndServe(":8080", nil)
+	fmt.Println(err)
 
 }
